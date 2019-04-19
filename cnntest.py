@@ -1,5 +1,5 @@
 from __future__ import print_function
-from sklearn.cross_validation import train_test_split
+from sklearn.model_selection import train_test_split
 import pandas as pd
 import numpy as np
 np.random.seed(1337)
@@ -101,7 +101,7 @@ model.add(Activation('sigmoid'))
 
 
 
-model.load_weights("logs/cnn/checkpoint-00.hdf5")
+model.load_weights("logs/cnn/checkpoint-01.hdf5")
 
 y_pred = model.predict_classes(X_test)
 accuracy = accuracy_score(y_test, y_pred)
