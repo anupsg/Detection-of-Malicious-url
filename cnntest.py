@@ -71,7 +71,6 @@ X_test = sequence.pad_sequences(T1, maxlen=maxlen)
 
 
 
-
 y_train = np.array(trainlabel)
 y_test = np.array(testlabel)
 
