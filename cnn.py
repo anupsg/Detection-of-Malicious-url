@@ -67,3 +67,39 @@ T1 = [[valid_chars[y] for y in x] for x in T]
 X_train = sequence.pad_sequences(X1, maxlen=maxlen)
 
 X_test = sequence.pad_sequences(T1, maxlen=maxlen)
+
+y_train = np.array(trainlabel)
+y_test = np.array(testlabel)
+
+
+hidden_dims = 128
+nb_filter = 128
+filter_length = 2 
+embedding_vecor_length = 128
+pool_length = 2
+lstm_output_size = 70
+
+
+model = Sequential()
+model.add(Embedding(max_features, embedding_vecor_length, input_length=maxlen))
+model.add(Convolution1D(nb_filter=nb_filter,
+                        filter_length=filter_length,
+                        border_mode='valid',
+                        activation='relu',
+                        subsample_length=1))
+#model.add(MaxPooling1D(pool_length=pool_length))
+#model.add(LSTM(lstm_output_size))
+model.add(GlobalMaxPooling1D())
+model.add(Dense(128))
+model.add(Dropout(0.2))
+model.add(Activation('relu'))
+model.add(Dense(1))
+model.add(Activation('sigmoid'))
+
+print(model.summary())
+
+model.compile(loss='binary_crossentropy', optimizer='adam',metrics=['accuracy'])
+checkpointer = callbacks.ModelCheckpoint(filepath="logs/cnn/checkpoint-{epoch:02d}.hdf5", save_best_only=True, monitor='val_acc', mode='max')
+csv_logger = CSVLogger('logs/cnn/cnnlstmanalysis.csv',separator=',', append=False)
+model.fit(X_train, y_train, batch_size=32, nb_epoch=1000,validation_split=0.2, shuffle=True,callbacks=[checkpointer,csv_logger])
+model.save("logs/cnn/completemodel.hdf5")
