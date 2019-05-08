@@ -62,6 +62,11 @@ cd to the folder where these files are. in this case, to test/Prathi-URL-project
 cd test/Prathi-URL-project-edited
 python model.py (Ex: python cnntest_1.py )
 
+if you get an error for crossmodel slection, 
+change it to model_selection.
+
+in the line - from sklearn.model_selection import train_test_split
+
 
 Prathi-URL-project-updated : 
 
