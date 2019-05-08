@@ -1,0 +1,261 @@
+[(venv) Prathikshas-MacBook-Pro:Prathi-URL-project-updated prathikshabalakrishna$ python lstmtest.py
+Using TensorFlow backend.
+246
+cnntest.py:93: UserWarning: Update your `Conv1D` call to the Keras 2 API: `Conv1D(activation="relu", padding="valid", strides=1, filters=128, kernel_size=2)`
+  subsample_length=1))
+checkpoint-22.hdf5
+2019-04-30 23:20:40.263667: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2019-04-30 23:20:40.263695: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2019-04-30 23:20:40.263705: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2019-04-30 23:20:40.263713: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+Using TensorFlow backend.
+42
+246
+checkpoint-05.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.820
+racall
+0.792
+precision
+0.842
+f1score
+0.816
+[[15707  2809]
+ [ 3926 14931]]
+checkpoint-26.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.853
+racall
+0.838
+precision
+0.866
+f1score
+0.852
+[[16069  2447]
+ [ 3055 15802]]
+checkpoint-19.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.849
+racall
+0.853
+precision
+0.849
+f1score
+0.851
+[[15648  2868]
+ [ 2776 16081]]
+checkpoint-10.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.843
+racall
+0.823
+precision
+0.859
+f1score
+0.841
+[[15964  2552]
+ [ 3331 15526]]
+checkpoint-20.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.850
+racall
+0.858
+precision
+0.846
+f1score
+0.852
+[[15571  2945]
+ [ 2672 16185]]
+checkpoint-04.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.806
+racall
+0.865
+precision
+0.776
+f1score
+0.818
+[[13806  4710]
+ [ 2550 16307]]
+checkpoint-17.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.848
+racall
+0.856
+precision
+0.845
+f1score
+0.850
+[[15552  2964]
+ [ 2714 16143]]
+checkpoint-01.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.765
+racall
+0.689
+precision
+0.817
+f1score
+0.748
+[[15601  2915]
+ [ 5863 12994]]
+checkpoint-13.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.845
+racall
+0.834
+precision
+0.856
+f1score
+0.845
+[[15871  2645]
+ [ 3139 15718]]
+checkpoint-21.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.850
+racall
+0.865
+precision
+0.843
+f1score
+0.854
+[[15476  3040]
+ [ 2553 16304]]
+checkpoint-15.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.848
+racall
+0.848
+precision
+0.851
+f1score
+0.849
+[[15712  2804]
+ [ 2875 15982]]
+checkpoint-06.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.826
+racall
+0.821
+precision
+0.832
+f1score
+0.826
+[[15389  3127]
+ [ 3378 15479]]
+checkpoint-09.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.837
+racall
+0.861
+precision
+0.824
+f1score
+0.842
+[[15050  3466]
+ [ 2630 16227]]
+checkpoint-07.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.833
+racall
+0.834
+precision
+0.835
+f1score
+0.835
+[[15412  3104]
+ [ 3130 15727]]
+checkpoint-34.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.856
+racall
+0.858
+precision
+0.857
+f1score
+0.857
+[[15814  2702]
+ [ 2680 16177]]
+checkpoint-03.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.796
+racall
+0.842
+precision
+0.773
+f1score
+0.806
+[[13851  4665]
+ [ 2977 15880]]
+checkpoint-02.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.784
+racall
+0.681
+precision
+0.861
+f1score
+0.761
+[[16445  2071]
+ [ 6013 12844]]
+checkpoint-12.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.843
+racall
+0.853
+precision
+0.840
+f1score
+0.846
+[[15444  3072]
+ [ 2777 16080]]
+checkpoint-08.hdf5
+confusion matrix
+----------------------------------------------
+accuracy
+0.836
+racall
+0.806
+precision
+0.860
+f1score
+0.832
+[[16038  2478]
+ [ 3651 15206]]
+[(venv) Prathikshas-MacBook-Pro:Prathi-URL-project-updated prathikshabalakrishna$
